@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("Partners.jpg");
+    background-size: cover;
+}
+
+.heading{
+    color: white;
+    margin-top: 14vh;
+}
+
+.heading h1{
+    font-size: max(4.5vw,42px);
+    font-weight: 400;
+    text-align: center;
+}
+
+.heading .bar{
+    height: 2.6px;
+    width: max(8vw, 60px);
+    border-radius: 35px;
+    margin: 0 auto;
+    background-color: rgb(226, 136, 52);
+}
+
+.images{
+    margin: 50px 0;
+    padding: max(2vw,15px) max(4vw, 30px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill,200px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.common{
+    width: 100%;
+    height: 100%;
+    border-radius: max(1.7vw,18px);
+    background-color: rgba(255,255,255,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common img{
+    width: 280px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.out2{
+    display: none;
+}
+
+@media (max-width:1200px) and (min-width:582px){
+    .images{
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-template-rows: repeat(auto-fill,170px);
+        grid-auto-rows: 170px;
+        grid-gap: 20px;
+    }
+
+    .common{
+        height:170px;
+    }
+
+    .common img{
+        width: 210px;
+        height: 150px;
+    }
+}
+
+@media (max-width:582px){
+    :root{
+        --omg: max(27vw,100px);
+    }
+
+    .images{
+        grid-template-columns: repeat(auto-fill, 46%);
+        grid-template-rows: repeat(auto-fill,var(--omg));
+        grid-auto-rows: var(--omg);
+        grid-gap: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .common{
+        height:var(--omg);
+    }
+
+    .common img{
+        width: 85%;
+        height: calc(var(--omg) - 20px);
+    }
+}
+
+#num5{
+    background-color: rgba(54,86,75,255);
+}

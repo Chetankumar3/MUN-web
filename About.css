@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.main{
+    background-image: url("lap.jpg");
+    background-size: cover;
+}
+
+.main .text{
+    width: 47%;
+    color: white;
+    font-size: max(16px,1.5vw);
+    font-weight: 500;
+    padding-left: 11%;
+    padding-top: 8%;
+}
+
+.main .sub{
+    text-align: end;
+}
+
+.section2{
+    background-color: black;
+    padding: clamp(10px,1.5rem,60px) 11%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.section2 .content{
+    max-width: 65%;
+    color: white;
+}
+
+.section2 h1{
+    font-size: max(20px,2.5vw);
+    line-height: max(24px,3.2vw);
+}
+
+.section2 img{
+    border-radius: 12%;
+}
+
+.section2 p, .section3 .text{
+    font-size: max(12px,0.9vw);
+    margin-top: 12px;
+    line-height: max(18px,1.6vw);
+    text-align: left;
+}
+
+.section2 img{
+    max-width: 23%;
+}
+
+#last{
+    padding-bottom: 80px;
+}
+
+#GYF{
+    border-radius: 50%;
+    box-shadow: 0 0 6rem .7rem rgba(255, 175, 28, 0.5);
+}
+
+#Funology{
+    border-radius: 50%;
+    box-shadow: 0 0 5rem .1rem rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width:777px){
+    p{
+        text-align: justify;
+    }
+
+    .main .text{
+        min-width: 90%;
+        padding: inherit 8%;
+    }
+
+    .section2{
+        display: block;
+        padding: 8%;
+    }
+
+    .section2 .content{
+        max-width: 100vw;
+    }
+
+    .section2 img{
+        display: block;
+        max-width: clamp(170px,50%,200px);
+        margin: 15vw 13vw;
+        margin: 15vw auto;
+    }
+
+}
+
+/*
+.section3{
+    min-height: 65vh;
+    background-color: black;
+    padding: clamp(10px,1.5rem,60px) 11vw;
+    color: white;
+    display: flex;
+    padding-top: 6%;
+}
+
+.section3 h1{
+    font-size: 1.7rem;
+    min-width: 32%;
+}
+
+.section3 p{
+    padding-bottom: 1.2rem;
+}
+
+.section4{
+    min-height: 55vh;
+}
+
+.section4 h2{
+    padding-bottom: 2%;
+}
+*/
